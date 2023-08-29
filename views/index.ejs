@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MY APP</title>
+    <meta charset="UTF-12">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/responsive.css">
+</head>
+<body>
+    <h1> <%= title %> </h1>
+    <a href="/ActuCrud/add" class="btn btn-sm btn-primary">Add Article</a> <br> <br>
+    <table class="table table-dark table-striped" style="width: 50%;height: auto;">
+        <thead>
+            <th>Titre</th>
+            <th>Article</th>
+            <th>Status</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <% articles.forEach(function(articles){ %>
+                <tr>
+                    <td><%= articles.titre %></td>
+                    <td><%= articles.article %></td>
+                    <td><%= articles.statut %></td>
+                    <td>
+                        <a href="update/<%= articles.id %>" class="btn btn-sm btn-primary">Edit</a>
+                        <form action="/ActuCrud/deleteBase" method="POST">
+                            <input type="hidden" name="idActu" value="<%= articles.id %>">
+                            <button class="btn btn-sm btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+        
+</body>
+</html>

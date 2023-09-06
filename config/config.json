@@ -1,26 +1,26 @@
 {
     "development": {
-      "username": "admin",
-      "password": "Mds23445",
+      "username": "dev",
+      "password": "devpass",
       "port": 3306,
       "database": "EcommerceVato",
-      "host": "midas-dbinstance.cyjtef0vjpbr.eu-west-2.rds.amazonaws.com",
+      "host": "localhost",
       "dialect": "mysql"
     },
     "test": {
-      "username": "admin",
-      "password": "Mds23445",
+      "username": "dev",
+      "password": "devpass",
       "port": 3306,
       "database": "EcommerceVato",
-      "host": "midas-dbinstance.cyjtef0vjpbr.eu-west-2.rds.amazonaws.com",
+      "host": "localhost",
       "dialect": "mysql"
     },
     "production": {
-      "username": "admin",
-      "password": "Mds23445",
+      "username": "dev",
+      "password": "devpass",
       "port": 3306,
       "database": "EcommerceVato",
-      "host": "midas-dbinstance.cyjtef0vjpbr.eu-west-2.rds.amazonaws.com",
+      "host": "localhost",
       "dialect": "mysql"
     }
   }

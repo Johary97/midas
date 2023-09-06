@@ -1,23 +1,23 @@
 {
     "development": {
-      "username": "dev",
-      "password": "devpass",
+      "username": "root",
+      "password": "passroot",
       "port": 3306,
       "database": "EcommerceVato",
       "host": "localhost",
       "dialect": "mysql"
     },
     "test": {
-      "username": "dev",
-      "password": "devpass",
+      "username": "root",
+      "password": "passroot",
       "port": 3306,
       "database": "EcommerceVato",
       "host": "localhost",
       "dialect": "mysql"
     },
     "production": {
-      "username": "dev",
-      "password": "devpass",
+      "username": "root",
+      "password": "passroot",
       "port": 3306,
       "database": "EcommerceVato",
       "host": "localhost",
